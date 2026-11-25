@@ -6,11 +6,8 @@ at its repo root; where the two disagree, the project's rule wins.
   *Why: small single-purpose functions are easier to test and reuse.*
 - **STY-2**: Functions over ~40 lines should be split unless there's a clear reason
   (e.g. a flat lookup table or switch).
-- **STY-3**: No `any`; use `unknown` and narrow. If `any` is unavoidable (e.g. an untyped
-  third-party API), it needs a one-line comment saying why.
-- **STY-4**: Use `async`/`await`, not raw `.then()` chains.
-- **STY-5**: Prefer `const` over `let` and never use `var`.
-- **STY-6**: Use named exports, not default exports.
+- **STY-3**: Use `async`/`await`, not raw `.then()` chains.
+- **STY-4**: Use named exports, not default exports.
 
 ## Single source of truth
 - **SRC-1**: One concept has one implementation. Before writing a helper, validation, limit or
